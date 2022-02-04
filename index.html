@@ -3,25 +3,29 @@
     <head>
         <meta charset = "UTF-8">
         <script src = "./index.js" defer></script>
-        <
+        <link rel = "stylesheet" href = "./styles.css">
+        
     </head>
     <body>
         <div>
             <div class = "top">
             <h1>Select a move!</h1> 
             </div>
-          
-             <form  onsubmit = "round()">
-          <select  id = "moves">
-              <option value = "rock">rock</option>
-              <option value = "paper">paper</option>
-              <option value = "scissors">scissors</option>
-          </select>
-          <input type = "submit" >
-             </form>
-          
-            <div id = "output">
-            </div>
+           
+                <select  id = "moves" >
+                    <option value = "rock">rock</option>
+                     <option value = "paper">paper</option>
+                    <option value = "scissors">scissors</option>
+                </select>
+                <input type = "buton" id = "btn" value = "submit" onclick= "round()">
+            
+            <br>
+            <span id = "computer-move"></span>
+            <br>
+            <span id= "player-move"></span>
+            <br>
+            <span id = "game-results"></span>
+            
         </div>
     </body>
 </html>
